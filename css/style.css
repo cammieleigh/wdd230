@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&family=Shrikhand&display=swap');
+body {
+    font-family: "Open Sans", sans-serif;
+    padding: 5px 25px;
+    font-size: 18px;
+    margin: 0;
+    background-color: #fad4c0;
+    background-image: url('../images/backgroundimage.jpg');
+  }
+
+  img{
+    opacity: 1;
+}
+h1 {
+    color: #CB793A;
+}
+header {
+    display: grid;
+    grid-template-columns: 110px auto;
+    align-items: center;
+    background: rgba(255,255,255, .65);
+    grid-template-columns: 1fr 2fr;
+    width: 50%;
+    margin: auto;
+    font-family: 'Shrikhand', cursive;
+    font-size: 25px;
+    padding: 5px 40px;
+    border-radius: 25px;
+}
+
+
+
+section {
+    background-color: #fad4c0;
+    width: 50%;
+    margin: auto;
+    background: rgba(255,255,255, .65);
+    padding: 25px 25px;
+    border-radius: 10px;
+    font-family: 'Raleway', sans-serif;
+}
+
+footer {
+    width: 50%;
+    margin: auto;
+    background: rgba(255,255,255, .65);
+    padding: 5px 40px;
+    border-radius: 25px;
+    text-align: center;
+}
+
+nav {
+    font-family: 'Raleway', sans-serif;
+}
+
+a:link{
+    color: #CB793A;
+}
+
+a:hover{
+    font-size: 125%;
+}
+
+a:visited{
+    color: #9FD356;
+}
