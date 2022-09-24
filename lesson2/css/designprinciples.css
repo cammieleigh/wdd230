@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200&family=Montserrat:wght@300&display=swap');
+body {
+    background-color: black;
+    margin: 0;
+}
+
+header {
+    border-color: white;
+    color: white;
+    margin: auto;
+    margin-bottom: 25px;
+    margin-top: 25px;
+    width: 75%;
+    text-align: center;
+    border-width: 5px;
+    border-style: solid;
+    font-family: 'Inconsolata', monospace;
+    font-size: 1.5em;
+}
+
+h2{
+    font-family: 'Inconsolata', monospace;
+    font-size: 2em;
+}
+
+h3{
+    font-family: 'Inconsolata', monospace;
+}
+
+section {
+    width: 75%;
+    margin: auto;
+    margin-bottom: 25px;
+    text-align: center;
+    border-width: 5px;
+    border-style: solid;
+    border-color: white;
+    color: white;
+    padding-bottom: 30px;
+}
+
+a {
+    font-family: 'Inconsolata', monospace;
+    color: white;
+    margin-bottom: 15px;
+
+}
+a:visited{
+    font-family: 'Inconsolata', monospace;
+    color: white;
+    margin-bottom: 15px;
+
+}
+p{
+    font-family: 'Montserrat', sans-serif;
+    width: 60vw;
+    text-align: center;
+    margin: auto;
+}
+
+img {
+    display: block;
+    width: 60vw;
+    margin: auto;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+
+@media only screen and (min-width: 700px) {
+    .content{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    img{
+        width: 25vw;
+    }
+    p{
+        width: 25vw;
+    }
+
+    section{
+        height: 68vh;
+    }
+    
+
+}
+
+@media only screen and (min-width: 1000px) {
+    .content{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    img{
+        width: 15vw;
+    }
+    
+    section{
+        height: 105vh;
+    }
+
+    p{
+        width: 23vw;
+    }
+
+}
