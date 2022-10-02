@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@200&family=Montserrat:wght@300&display=swap');
+
+body{
+    background-color: #D8DAD3;
+    margin: auto;
+}
+header {
+    display: flex;
+    align-items: center;
+    width: 85vw;
+    font-family: 'Karla', sans-serif;
+    font-size: 25px;
+    background-color: #A4C2A5;
+    flex-flow: column;
+    margin: auto;
+    padding-top: 5px;
+    padding-bottom: 10px;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+nav a {
+    display: block;
+    text-decoration: none;
+    color: #566246;
+    text-align: center;
+}
+
+p {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
+
+h1 {
+    font-family: 'Karla', sans-serif;
+    text-align: center;
+}
+
+h2 {
+    font-family: 'Karla', sans-serif;
+    text-align: center;
+}
+
+div {
+    width: 50vw;
+    margin: auto;
+}
+
+
+
+#logo {
+    border-radius: 50%;
+    width: 75%;
+    margin: auto;
+    margin-top: 3em;
+}
+
+#scenarios {
+    text-align: center;
+    list-style-type:decimal;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+ul {
+    list-style: none;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#color1 {
+    background-color: #A4C2A5;
+}
+
+#color2 {
+    background-color: #566246;
+}
+
+#color3 {
+    background-color: #D8DAD3;
+    border-style: solid;
+}
+
+#color4 {
+    background-color: #BC4B51;
+}
+
+img {
+    display: grid;
+    height: auto;
+    width: 100%;
+    margin: auto;
+}
+
+#colorScheme {
+    text-align: center;
+}
+
+
+
+/*Media view for medium screens */
+@media only screen and (min-width: 700px) {
+ nav {
+    flex-direction: row;
+    justify-content: space-around;
+    padding-left: 10px;
+    padding-right: 10px;
+ }
+
+ nav a{
+    font-size: 1.5em;
+ }
+
+ p {
+    font-size: 2em;
+ }
+
+ h1{
+    font-size: 2em;
+ }
+
+ h2{
+    font-size: 2em;
+ }
+
+}
+
+/*Media view for large screens */
+@media only screen and (min-width: 1000px){
+    nav a{
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 1.5em;
+}
+
+p{
+    font-size: 1.3em;
+}
+h1{
+    font-size: 1.75em;
+ }
+
+ h2{
+    font-size: 1.75em;
+ }
+
+ img {
+    height: auto;
+    width: 30%;
+ }
+
+ #logo {
+    width: 40%;
+ }
+
+ ol{
+    font-size: 1.3em;
+ }
+
+}
