@@ -129,16 +129,15 @@ header{
 #facebook{
     grid-column: 8/11;
     grid-row: 1/2;
-    width: 8%;
     height: auto;
-    border-radius: 25%;;
+    width: .75em;
 }
-#instagram{
+
+#twitter{
     grid-column: 8/11;
     grid-row: 1/2;
-    width: 8%;
     height: auto;
-    border-radius: 25%;
+    width: 1.25em;
 }
 
 nav {
@@ -399,6 +398,9 @@ nav {
     header{
         padding-bottom: 10px;
         width: 100%;
+    }
+
+    #socials{
     }
 }
 
