@@ -86,10 +86,9 @@ footer{
 .btn{
     background-color: #A4C2A5;
     border-style: none;
-    background-image: url('../images/menuicon.png');
-    height: 25%;
-    width: 100%;
-    margin: auto;
+    font-family: 'Karla', sans-serif; 
+    color: #566246;
+    font-size: 2em;
     margin-left: 20px;
 }
 
