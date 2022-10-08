@@ -83,16 +83,14 @@ footer{
     
 }
 
-.hamburger{
-    width: 35px;
-    height: 3px;
-    background-color: #566246;
-    margin: 6px 0;
-}
-
-button{
+.btn{
     background-color: #A4C2A5;
     border-style: none;
+    background-image: url('../images/menuicon.png');
+    height: 25%;
+    width: 100%;
+    margin: auto;
+    margin-left: 20px;
 }
 
 a {
