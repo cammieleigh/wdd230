@@ -1,0 +1,397 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@200&family=Montserrat:wght@300&display=swap');
+body{
+    background-color: white;
+    margin: 0;
+}
+main{
+    margin: auto;
+    margin-bottom: 20px;
+
+}
+section{
+    margin-top: 20px;
+    margin-left: 10px;
+    background-color: #E2F5E3;
+    height: 20vh;
+    width: 85vw;
+    font-size: .75em;
+    padding: 10px;
+    border-style: solid;
+    border-width: 3px;
+    border-color: #566246;
+}
+
+h2{
+    font-family: 'Karla', sans-serif;
+}
+
+h1{
+    font-family: 'Karla', sans-serif;
+}
+
+#spotlight {
+    height: 60vh;
+    padding-top: 30px;
+    margin-top: 20px;
+    
+}
+
+#spotlight1 {
+    height: 40%;
+    border-style: solid;
+    width: 85%;
+    margin: auto;
+    border-width: 2px;
+}
+
+#spotlight2 {
+    height: 40%;
+    width: 85%;
+    border-style: solid;
+    border-width: 2px;
+    margin: auto;
+    margin-top: 30px;
+}
+
+#lowerfooter {
+    border-top-style: solid;
+    border-width: 1px;
+    margin-top: 5px;
+    
+}
+
+footer{
+    text-align: center;
+    font-family: 'Karla', sans-serif;
+}
+
+
+#logo {
+    border-radius: 50%;
+    width: 35%;
+}
+
+#spotlight3 {
+    display: none;
+    border-style: solid;
+    border-width: 2px;
+    margin: auto;
+}
+
+#join {
+    display: none;
+    
+}
+
+.hamburger{
+    width: 35px;
+    height: 3px;
+    background-color: #566246;
+    margin: 6px 0;
+}
+
+button{
+    background-color: #A4C2A5;
+    border-style: none;
+}
+
+a {
+    font-family: 'Karla', sans-serif; 
+    color: #566246;
+    margin-bottom: 5px;
+}
+
+#headergrid{
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: 2fr 1fr;
+}
+header{
+    background-color: #A4C2A5;
+    width: 100vw;
+    margin: auto;
+}
+
+#date{
+    font-family: 'Karla', sans-serif; 
+    grid-row: 2/3;
+    grid-column: 2/8;
+    text-align: center;
+}
+
+#title{
+    font-size: .75em;
+    grid-column: 2/8;
+    text-align: center;
+    color: #566246;
+}
+
+#socials{
+    grid-column: 8/11;
+    grid-row: 1/2;
+}
+
+.fa-instagram{
+    margin-left: 5px;
+}
+
+nav {
+    display: flex;
+    flex-direction:column;
+    display: none; 
+    background-color: #A4C2A5;
+    align-content: space-evenly;
+    text-align: center;
+    width: 75%;
+    margin: auto;
+}
+
+.showMenu{
+    display: flex;
+    flex-direction: column;
+}
+
+#headerlogo {
+    border-radius: 50%;
+    width: 95%;
+    grid-column: 8/11;
+    grid-row: 1/2;
+    margin: auto
+}
+
+#maintitle{
+    margin-bottom: -10px;
+}
+
+#date {
+    color: #566246;
+}
+
+/*Medium screen view */
+@media only screen and (min-width: 700px) {
+
+    main{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+        grid-row-gap: 75px;
+        margin-left: 30px;
+        width: 85vw;
+        height: 100%;
+        margin-bottom: -75px;
+    }
+
+    #spotlight{
+        margin-top: 20px;
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        height: 100%;
+        align-items: stretch;
+        padding-bottom: 30px;
+    }
+
+    #spotlightsection{
+        grid-row: 3/4;
+        grid-column: 1/4;
+        width: 100%;
+        margin-bottom: 25px;
+    }
+
+    #spotlight1 {
+        height: 100%;
+        width: 45%;
+        margin: auto;
+
+    }
+
+    #spotlight2 {
+        height: 100%;
+        width: 45%;
+        margin: auto;
+    }
+
+
+    #weather {
+        grid-row: 4/5;
+        grid-column: 3/4;
+        width: 100%;
+        height: 100%;
+    }
+
+    #event {
+        grid-row: 4/5;
+        grid-column: 1/3; 
+        width: 100%;
+        height: 100%;
+    }
+
+
+    #news {
+        grid-row: 2/3;
+        grid-column: 1/4;
+        width: 100%;
+        height: 100%;
+    }
+
+    #site-name{
+        grid-row: 1/2;
+        grid-column: 1/4;
+        width: 100%;
+        height: 100%;
+    }
+
+    #maintitle{
+        font-size: 4em;
+    }
+
+    #date{
+        font-size: 1.75em;
+    }
+
+    footer{
+        font-size: 1.5em;
+    }
+
+    h2{
+        font-size: 2em;
+    }
+
+    nav{
+        font-size: 2em;
+    }
+    
+}
+
+
+/*Large screen view */
+@media only screen and (min-width: 1000px){
+
+
+
+    main{
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-gap: 50px;
+        height: 100%;
+        margin-bottom: 70px;
+        margin: auto;
+    }
+
+    #event{
+        grid-row: 1/2;
+        grid-column: 1/2;
+        width: 100%;
+    }
+
+    #weather{
+        grid-row: 2/3;
+        grid-column: 1/2;
+        width: 100%;
+    }
+
+    #site-name{
+        grid-row: 1/3;
+        grid-column: 2/4;
+        width: 100%;
+    }
+
+    #news{
+        grid-row: 3/4;
+        grid-column: 2/4;
+        width: 100%;
+    }
+
+    #spotlightsection {
+        grid-row: 1/4;
+        grid-column: 4/5;
+        width: 100%;
+        height: 100%;
+    }
+
+    #spotlight{
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 10px;
+        padding-top: 10px;
+    }
+
+    #spotlight3 {
+        display: flex;
+        height: 30%;
+        width: 85%;
+    }
+
+    #spotlight2 {
+        height: 30%;
+        width: 85%;
+    }
+
+    #spotlight1 {
+        height: 30%;
+        width: 85%;
+    }
+
+    #join{
+        display: grid;
+        width: 100%;
+        grid-column: 1/2;
+        grid-row: 3/4;
+        height: 100%;
+    }
+
+    #logo{
+        width: 10%;
+    }
+
+    #headerlogo{
+        width: 30%;
+    }
+
+    footer{
+        height: 100%;
+        font-size: 1.25em;
+        margin-top: 60px;
+    }
+
+    .hamburger{
+       display: none;
+    }
+    
+    button{
+       display: none;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: row; 
+        grid-column: 3/9;
+        grid-row: 2/3;
+        font-size: 1.5em;
+        justify-content: space-around;
+        
+    }
+
+    #title{
+        grid-column: 4/8;
+        grid-row: 1/2;
+        text-align: center;
+        margin-right: 20px;
+        font-size: .65em;
+    }
+
+    #date{
+        grid-row: 1/2;
+        grid-column: 1/4;
+        margin: auto;
+        border-style: solid;
+        border-color: #566246;
+        padding: 15px;
+    }
+
+    header{
+        padding-bottom: 10px;
+        width: 100%;
+    }
+}
+
