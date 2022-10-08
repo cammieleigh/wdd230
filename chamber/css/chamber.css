@@ -126,13 +126,19 @@ header{
     color: #566246;
 }
 
-#socials{
+#facebook{
     grid-column: 8/11;
     grid-row: 1/2;
+    width: 8%;
+    height: auto;
+    border-radius: 25%;;
 }
-
-.fa-instagram{
-    margin-left: 5px;
+#instagram{
+    grid-column: 8/11;
+    grid-row: 1/2;
+    width: 8%;
+    height: auto;
+    border-radius: 25%;
 }
 
 nav {
