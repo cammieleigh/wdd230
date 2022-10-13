@@ -20,3 +20,13 @@ const date_now = new Date();
 const full_date = new Intl.DateTimeFormat ('en-US', {dateStyle: 'full'}).format(date_now);
 
 document.querySelector('#date').textContent = full_date;
+
+//Monday/Tuesday Banner
+let dayNumber = date.getDay();
+let banner = document.querySelector('.banner');
+
+console.log(dayNumber);
+
+if(dayNumber == 3 || dayNumber == 2){
+    banner.classList.add('showBanner');
+}

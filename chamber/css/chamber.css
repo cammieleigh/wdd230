@@ -6,19 +6,27 @@ body{
 main{
     margin: auto;
     margin-bottom: 20px;
-
 }
+
+#site-name{
+    background-image: url('../images/lehiphoto.jpg');
+    object-fit: contain;
+}
+
+#site-name h2{
+    color: white;
+    font-family: 'Karla', sans-serif;
+    text-align: left;
+}
+
 section{
     margin-top: 20px;
     margin-left: 10px;
-    background-color: #E2F5E3;
     height: 20vh;
     width: 85vw;
     font-size: .75em;
     padding: 10px;
-    border-style: solid;
-    border-width: 3px;
-    border-color: #566246;
+    border-top: 3px solid #566246;
 }
 
 h2{
@@ -112,8 +120,12 @@ header{
 #date{
     font-family: 'Karla', sans-serif; 
     grid-row: 2/3;
-    grid-column: 2/8;
+    grid-column: 1/11;
     text-align: center;
+    background-color: #C9E1BF;
+    width: 100%;
+    color: #566246;
+    padding-top: 10px;
 }
 
 #title{
@@ -141,7 +153,7 @@ nav {
     display: flex;
     flex-direction:column;
     display: none; 
-    background-color: #A4C2A5;
+    background-color: #C9E1BF;
     align-content: space-evenly;
     text-align: center;
     width: 75%;
@@ -165,9 +177,53 @@ nav {
     margin-bottom: -10px;
 }
 
-#date {
-    color: #566246;
+main h2 {
+    text-align: center;
 }
+
+p{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.25em;
+    text-align: center;
+}
+
+.banner{
+    display: none;
+
+}
+
+.showBanner{
+    display: flex;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1em;
+    text-align: center;
+    height: 50%;
+    background-color: #FFF6A1;
+    background-image: url('../images/mountains.jpg');
+    object-fit: cover;
+    padding-top: 0px;
+}
+
+#bannertext {
+    background: rgba(255,255,255, .65);
+}
+
+#lowerfooter{
+    font-size: .65em;
+}
+
+#buttonParent{
+    position: relative;
+    width: 338px;
+    height: 157px;
+}
+
+#joinButton{
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+}
+
 
 /*Medium screen view */
 @media only screen and (min-width: 700px) {
@@ -175,12 +231,13 @@ nav {
     main{
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(5, 1fr);
+        grid-template-rows: repeat(6, 1fr);
         grid-row-gap: 75px;
-        margin-left: 30px;
         width: 85vw;
         height: 100%;
         margin-bottom: -75px;
+        margin: auto;
+        margin-left: 40px;
     }
 
     #spotlight{
@@ -226,6 +283,7 @@ nav {
         grid-column: 1/3; 
         width: 100%;
         height: 100%;
+    
     }
 
 
@@ -260,7 +318,19 @@ nav {
     }
 
     nav{
+        margin-top: -50px;
         font-size: 2em;
+    }
+    .banner{
+        width: 65%;
+        margin: auto;
+        margin-top: 20px;
+    }
+    
+    .showbanner{
+        display: block;
+        width: 65%;
+        padding-left: 20px;
     }
     
 }
@@ -372,7 +442,8 @@ nav {
         font-size: 1.5em;
         justify-content: space-around;
         width: 100%;
-        
+        height: 2.5em;
+        padding-top: 25px;
     }
 
     #title{
@@ -390,6 +461,7 @@ nav {
         border-style: solid;
         border-color: #566246;
         padding: 15px;
+        margin-left: 10px;
     }
 
     header{
@@ -397,7 +469,12 @@ nav {
         width: 100%;
     }
 
-    #socials{
+    .banner{
+        width: 55%;
     }
+
+    
+
+   
 }
 
