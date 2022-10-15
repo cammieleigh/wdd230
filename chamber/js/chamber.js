@@ -27,6 +27,6 @@ let banner = document.querySelector('.banner');
 
 console.log(dayNumber);
 
-if(dayNumber == 3 || dayNumber == 2){
+if(dayNumber == 1 || dayNumber == 2){
     banner.classList.add('showBanner');
 }
