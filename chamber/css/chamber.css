@@ -53,8 +53,15 @@ h1{
     width: 85%;
     margin: auto;
     border-width: 2px;
+    display: flex;
+    flex-direction: column;
 }
 
+.spotlightLower{
+    display: flex;
+    flex-direction: row;
+    font-size: .83em;
+}
 #spotlight2 {
     height: 40%;
     width: 85%;
@@ -62,6 +69,8 @@ h1{
     border-width: 2px;
     margin: auto;
     margin-top: 30px;
+    display: flex;
+    flex-direction: row;
 }
 
 #lowerfooter {
@@ -281,6 +290,13 @@ p{
 #scissors{
     margin: auto;
 }
+
+.spotlightContent{
+    display: display;
+    flex-direction: column;
+}
+
+
 /*Medium screen view */
 @media only screen and (min-width: 700px) {
 
@@ -320,6 +336,7 @@ p{
         width: 40%;
         margin: auto;
         margin-right: -10px;
+        display: flex;
     }
 
     #spotlight2 {
@@ -328,6 +345,7 @@ p{
         margin: auto;
     }
 
+   
 
     #weather {
         grid-row: 4/5;
@@ -482,9 +500,11 @@ p{
         
     }
 
-    #clothingButton{
-        display: flex;
-        flex-shrink: 3;
+    #clothesButton{
+        width: 50%;
+        height: 50%;
+        margin: auto;
+
     }
 
     #spotlight2 {
