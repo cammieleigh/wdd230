@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" href="css/chamber.css">
     <script defer src="js/chamber.js"></script>
+    <script defer src="js/windChill.js"></script>
     <link rel="shortcut icon" href="favicon.ico">
     <meta name="description" content="The home page for the chamber of commerce webpage">
     <title>Chamber Home Page</title>
@@ -20,7 +21,7 @@
         <h2>Chamber of Commerce</h2>
         </div>
         
-        <img id='headerlogo' src="images/LehiChamberLogo.jpg" alt="Lehi Chamber logo with mountains">
+        <img id='headerlogo' src="images/LehiChamberLogo.webp" alt="Lehi Chamber logo with mountains">
         <span id="date"></span>
     </div>
     </header>
@@ -53,9 +54,11 @@
     <div id="weatherInfo">
             <img id="weatherPhoto" src="images/weather.png" alt="Sun and cloud icon">
         <div id="weatherText">
-            <p id="degrees">75°F</p>
-            <p id="weatherType">Partly cloudy</p>
+            <p class="weatherDetails farenheit"><span id='t'>40</span> &#8457</p>
+            <p class="weatherDetails">mph<span id="w">4</span></p>
+            <p class="weatherDetails">Wind chill: <span id="chill">N/A</span></p>
         </div>
+        <p id="weatherType">Partly cloudy</p>
     </div>
         </section>
         <section id="news">
@@ -69,29 +72,33 @@
                 <div class="spotlightLower">
                 <img id='scissors' src="images/scissors.png" alt="Scissors">
                 <div class="spotlightContent">
-                    <p>Haircuts done right!</p>
                     <p>contact@harryshair.com</p>
                     <p>123-456-0000 | Website</p>
                 </div>
             </div>
+            <p class="slogan">Haircuts done right!</p>
             </div>
             <div id="spotlight2">
                 <h2>Pawsome Pets</h2>
+                <div class="spotlightLower">
                 <img id="paw" src="images/paw.png" alt="Paw">
                 <div class="spotlightContent">
-                    <p>A pet's paradise</p>
                     <p>contact@pawsome.com</p>
                     <p>123-456-0000 | Website</p>
                 </div>
             </div>
+            <p class="slogan">A pet's paradise</p>
+            </div>
             <div id="spotlight3">
                 <h2>Taylor & Taylor Tailoring</h2>
+                <div class="spotlightLower">
                 <img id="clothesButton" src="images/button.png" alt="Button">
                 <div class="spotlightContent">
-                    <p>No need to HEM and haw anymore</p>
                     <p>contact@taylortailor.com</p>
                     <p>123-456-0000 | Website</p>
                 </div>
+            </div>
+            <p class="slogan">No need to HEM and haw anymore</p>
             </div>
         </section>
         </div>
@@ -101,7 +108,7 @@
     </main>
     <footer>
         <div id="upperfooter">
-        <img id='logo' src="images/footerlogo.JPG" alt="Lehi Chamber logo with mountains">
+        <img id='logo' src="images/footerlogo.webp" alt="Lehi Chamber logo with mountains">
         <p id="contact">contact@lehicc.org</p>
         <a id="map" href="https://www.google.com/maps/place/Lehi,+UT/@40.4134715,-111.9388359,12z/data=!3m1!4b1!4m5!3m4!1s0x874d7fedd81a1b69:0xfd6fac81600d61c9!8m2!3d40.3916172!4d-111.8507662">Lehi City Map</a>
         </div>

@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Karla:wght@200&family=Montserrat:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@200&family=Montserrat:wght@300&display=swap&family=Montserrat+Alternates:ital,wght@1,500&display=swap');
 body{
     background-color: white;
     margin: 0;
@@ -10,8 +10,9 @@ main{
 }
 
 #site-name{
-    background-image: url('../images/lehiphoto.jpg');
-    object-fit: contain;
+    background-image: url('../images/mountain600word.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
     position: relative;
     
 }
@@ -20,12 +21,12 @@ main{
     color: white;
     font-family: 'Karla', sans-serif;
     text-align: left;
+    font-size: 3em;
 }
 
 section{
     margin-top: 20px;
-    /* margin-left: 10px; */
-    height: 20vh;
+    height: 30vh;
     width: 85vw;
     font-size: .75em;
     padding: 10px;
@@ -44,15 +45,14 @@ h1{
     height: 60vh;
     padding-top: 30px;
     margin-top: 20px;
-    
+    border-top: 3px solid #566246;
 }
 
 #spotlight1 {
-    height: 40%;
-    border-style: solid;
-    width: 85%;
+    height: 50%;
+    border-top: 2px solid #566246;
+    width: 100%;
     margin: auto;
-    border-width: 2px;
     display: flex;
     flex-direction: column;
 }
@@ -63,14 +63,24 @@ h1{
     font-size: .83em;
 }
 #spotlight2 {
-    height: 40%;
-    width: 85%;
-    border-style: solid;
-    border-width: 2px;
+    height: 50%;
+    width: 100%;
+    border-top: 2px solid #566246;
     margin: auto;
     margin-top: 30px;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+}
+
+#spotlight3 {
+    display: none;
+    margin: auto;
+    border-top: 2px solid #566246;
+}
+
+.slogan{
+    font-family: 'Montserrat Alternates', sans-serif;
+    margin-top: 30px;
 }
 
 #lowerfooter {
@@ -91,12 +101,7 @@ footer{
     width: 35%;
 }
 
-#spotlight3 {
-    display: none;
-    border-style: solid;
-    border-width: 2px;
-    margin: auto;
-}
+
 
 #join {
     display: none;
@@ -256,27 +261,35 @@ p{
 
 #weatherPhoto{
     flex-basis: content;
+    grid-column: 1/2;
 }
 
 #weatherInfo{
-    display: flex;
-    align-self: flex-start;
-    justify-content: flex-start;
-    column-gap: 50px;
-    flex-grow: 1;
+    display: grid;
+    grid-template-columns: 1fr, 1fr;
 }
 
 #weatherType{
-    margin-top: 25px;
     font-size: 1.5em;
-    justify-content: center;
+    margin: 0px;
+    margin-top: 25px;
+    text-align: center;
+    grid-column: 1/3;
 }
 
 #weatherText{
+    display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    column-gap: 5px;
+    justify-content: space-around;
+    grid-column: 2/3;
+}
+
+.weatherDetails{
+    margin: 0px;
+}
+
+.farenheit{
+    font-family: 'Montserrat', sans-serif;
 }
 
 #weather{
@@ -285,6 +298,7 @@ p{
 
 #paw{
     margin: auto;
+    width: 25%;
 }
 
 #scissors{
@@ -292,8 +306,9 @@ p{
 }
 
 .spotlightContent{
-    display: display;
+    display: flex;
     flex-direction: column;
+    margin-right: 20px;
 }
 
 
@@ -320,8 +335,7 @@ p{
         height: 100%;
         align-items: stretch;
         padding-bottom: 30px;
-        border-style: solid;
-        border-color: #566246;
+        border-top: 3px solid #566246;
     }
 
     #spotlightsection{
@@ -377,6 +391,9 @@ p{
         position: relative;
         margin: auto;
         margin-top: 30px;
+        background-image: url('../images/mountain800word.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
     }
 
     #buttonParent{
@@ -459,6 +476,9 @@ p{
         width: 90%;
         height: 95%;
         position: relative;
+        background-image: url('../images/mountain1000word.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
     }
 
     #buttonParent{
@@ -501,10 +521,9 @@ p{
     }
 
     #clothesButton{
-        width: 50%;
-        height: 50%;
+        width: 30%;
         margin: auto;
-
+        margin-left: 20px;
     }
 
     #spotlight2 {

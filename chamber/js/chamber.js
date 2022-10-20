@@ -25,8 +25,7 @@ document.querySelector('#date').textContent = full_date;
 let dayNumber = date.getDay();
 let banner = document.querySelector('.banner');
 
-console.log(dayNumber);
-
 if(dayNumber == 1 || dayNumber == 2){
     banner.classList.add('showBanner');
 }
+
