@@ -18,10 +18,13 @@ main{
 }
 
 #site-name h2{
-    color: white;
+    color: #476039;
     font-family: 'Karla', sans-serif;
     text-align: left;
     font-size: 3em;
+    background-color: white;
+    width: 45%;
+    padding-left: 5px;
 }
 
 section{
@@ -266,7 +269,7 @@ p{
 
 #weatherInfo{
     display: grid;
-    grid-template-columns: 1fr, 1fr;
+    grid-template-columns: 1fr 1fr;
 }
 
 #weatherType{
