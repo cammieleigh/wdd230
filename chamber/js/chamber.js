@@ -27,5 +27,67 @@ let banner = document.querySelector('.banner');
 
 if(dayNumber == 1 || dayNumber == 2){
     banner.classList.add('showBanner');
+};
+
+//Lazy loading
+const pimages = document.querySelectorAll('[data-src]');
+const options = {
+    threshold: 1,
+    rootMargin: '0px 0px 100px 0px'
 }
 
+function preloadImage(img){
+    const source = img.getAttribute('data-src');
+    if (!source) {
+        return;
+    }
+
+    img.src = source;
+}
+
+const io = new IntersectionObserver(
+    (entries, io) => {
+        entries.forEach(entry => {
+            if(!entry.isIntersecting){
+                return;
+            }
+            else{
+                preloadImage(entry.target);
+                io.unobserve(entry.target);
+            }
+        });
+        
+    }, 
+    
+        options
+    
+);
+
+pimages.forEach(image =>{
+    io.observe(image);
+})
+
+//Local Storage
+
+if (!localStorage.getItem('visit')){
+    localStorage.setItem('visit', date_now);
+    document.querySelector('#visitParagraph').textContent = 'This is your first visit!';
+}
+
+else{
+
+let lastKey = localStorage.getItem('visit');
+console.log(lastKey);
+
+let dateDifference = date_now - lastKey;
+
+console.log(dateDifference);
+
+let differenceDay = dateDifference / 86400000;
+
+let dayRounded = Math.floor(differenceDay);
+
+
+document.querySelector('.visits').textContent = dayRounded;
+
+}
