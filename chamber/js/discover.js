@@ -68,12 +68,9 @@ if (!localStorage.getItem('visit')){
 
 else{
 
-let lastKey = localStorage.getItem('visit');
-console.log(lastKey);
+let lastKey = new Date(localStorage.getItem('visit'));
 
-let dateDifference = date_now - lastKey;
-
-console.log(dateDifference);
+let dateDifference = Math.abs(date_now - lastKey);
 
 let differenceDay = dateDifference / 86400000;
 
