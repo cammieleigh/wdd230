@@ -79,4 +79,6 @@ let dayRounded = Math.floor(differenceDay);
 
 document.querySelector('.visits').textContent = dayRounded;
 
+localStorage.setItem('visit', date_now);
+
 }
