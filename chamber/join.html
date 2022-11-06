@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="css/chamber.css">
+    <script defer src="js/chamber.js"></script>
+    <script defer src="js/join.js"></script>
+    <title>Form</title>
+</head>
+<body>
+    <header>
+        <div id="headergrid">
+            <button class="btn"><span>&#9776;</span></button>
+            <div id="title">
+            <h1 id="maintitle">Lehi City</h1>
+            <h2>Chamber of Commerce</h2>
+            </div>
+            
+            <img id='headerlogo' src="images/LehiChamberLogo.webp" alt="Lehi Chamber logo with mountains">
+            <span id="date"></span>
+        </div>
+        </header>
+        <nav id="menu">
+            <a href="discover.html">Discover</a>
+            <a href="directory.html">Directory</a>
+            <a href="join.html">Join</a>
+            <a href="contact.html">Contact</a>
+            <div id="socials">
+                <img id="facebook" src="images/facebook.png" alt="facebook logo">
+                <img id="twitter" src="images/twitter.png" alt="instagram logo">
+            </div>
+        </nav>
+    <main id="formMain">
+    <h1 id="memberHeading">Membership Form</h1>
+    <h1 id="levelHeading">Membership Levels</h1>
+    <form method="get" action="thankyou.html">
+        <label for="fname">First Name*:</label>
+        <input id="fname" type="text" name="firstname" required>
+        <label for="lname">Last Name*:</label>
+        <input id="lname" type="text" name="lastname" required>
+        <label for="title">Business Position Title:</label>
+        <input class="title" name="biztitle"  type="text" pattern="^[A-Za-z -]+$">
+        <div id="errorMessage"></div>
+        <label for="email">Email*:</label>
+        <input id="email" type="email" placeholder="example@example.com" name="email" required>
+        <label for="phoneNumber">Phone Number*:</label>
+        <input id="phoneNumber" type='tel' required>
+        <label for="businessName">Business Name*:</label>
+        <input id="businessName" name="bizname">
+        <label for="membership">Membership Level:</label>
+        <select id="membership" name="memberLevel" value="" name="memberLevel">
+            <option value="none" selected disabled hidden></option>
+            <option value="np">NP Membership</option>
+            <option value="bronze">Bronze Membership</option>
+            <option value="silver">Silver Membership</option>
+            <option value="gold">Gold Membership</option>
+        </select>
+        <label for="description">Description of your business:</label>
+        <input id="description" name="description" type="text">
+        <input type="hidden" id="date" name="date" value="">
+        <input id='submit' type="submit" value="Submit">
+    </form>
+    <section id="membershipDescriptions">
+        <div class="levelDescription">
+            <h2>NP Membership</h2>
+            <ul>
+                <li>For non-profit members, there is no fee.</li>
+            </ul>
+        </div>
+        <div class="levelDescription">
+            <h2>Bronze Membership</h2>
+            <ul>
+                <li>15% discount on events</li>
+                <li>10% discount on advertising</li>
+                <li>Fee of $50/month</li>
+            </ul>
+        </div>
+        <div class="levelDescription">
+            <h2>Silver Membership</h2>
+            <ul>
+                <li>25% discount on events</li>
+                <li>15% discount on advertising</li>
+                <li>Free participation in the trade fair</li>
+                <li>Fee of $100/month</li>
+            </ul>
+        </div>
+        <div class="levelDescription">
+            <h2>NP Membership</h2>
+            <ul>
+                <li>50% discount on events</li>
+                <li>50% discount on advertising</li>
+                <li>Free participation in the trade fair</li>
+                <li>5 free featured ads per year</li>
+                <li>1 free training per quarter</li>
+                <li>Fee of $250/month</li>
+            </ul>
+        </div>
+    </section>
+</main>
+    <footer>
+        <div id="upperfooter">
+        <img id='logo' src="images/footerlogo.webp" alt="Lehi Chamber logo with mountains">
+        <p id="contact">contact@lehicc.org</p>
+        <a id="map" href="https://www.google.com/maps/place/Lehi,+UT/@40.4134715,-111.9388359,12z/data=!3m1!4b1!4m5!3m4!1s0x874d7fedd81a1b69:0xfd6fac81600d61c9!8m2!3d40.3916172!4d-111.8507662">Lehi City Map</a>
+        </div>
+        <div id="lowerfooter">
+            <p>&copy; <span class="year"></span> Lehi Chamber - Cammie Peterson - WDD 230 project - Last updated: <span class="updated"></span></p>
+        </div>
+    </footer>
+</body>
+</html>
