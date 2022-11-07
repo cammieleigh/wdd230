@@ -330,7 +330,6 @@ form{
     flex-direction: column;
     width: 75%;
     justify-content: space-between;
-    align-items: left;
 }
 
 label{
@@ -573,7 +572,6 @@ input{
     
     .container{
         height: 37%;
-        float: center;
         position: relative
     }
     

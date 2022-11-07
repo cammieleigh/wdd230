@@ -1,5 +1,5 @@
 const loadedDate = new Date();
-const loadDate = document.querySelector('#date');
+const loadDate = document.querySelector('#loadDate');
 loadDate.value = loadedDate;
 console.log(loadDate);
 const input = document.querySelector('.title');

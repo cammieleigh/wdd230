@@ -41,8 +41,8 @@
         <input id="fname" type="text" name="firstname" required>
         <label for="lname">Last Name*:</label>
         <input id="lname" type="text" name="lastname" required>
-        <label for="title">Business Position Title:</label>
-        <input class="title" name="biztitle"  type="text" pattern="^[A-Za-z -]+$">
+        <label for="biztitle">Business Position Title:</label>
+        <input id="biztitle" class="title" name="biztitle"  type="text" pattern="^[A-Za-z -]+$" minlength="7">
         <div id="errorMessage"></div>
         <label for="email">Email*:</label>
         <input id="email" type="email" placeholder="example@example.com" name="email" required>
@@ -51,8 +51,8 @@
         <label for="businessName">Business Name*:</label>
         <input id="businessName" name="bizname">
         <label for="membership">Membership Level:</label>
-        <select id="membership" name="memberLevel" value="" name="memberLevel">
-            <option value="none" selected disabled hidden></option>
+        <select id="membership" name="memberLevel">
+            <option value=" " selected disabled hidden></option>
             <option value="np">NP Membership</option>
             <option value="bronze">Bronze Membership</option>
             <option value="silver">Silver Membership</option>
@@ -60,7 +60,7 @@
         </select>
         <label for="description">Description of your business:</label>
         <input id="description" name="description" type="text">
-        <input type="hidden" id="date" name="date" value="">
+        <input type="hidden" id="loadDate" name="date" value="">
         <input id='submit' type="submit" value="Submit">
     </form>
     <section id="membershipDescriptions">
