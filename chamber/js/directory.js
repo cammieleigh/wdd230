@@ -55,6 +55,7 @@ fetch(requestURL)
     let icon = document.createElement('img');
     icon.setAttribute('class', 'directoryIcon');
     icon.setAttribute('src', business.icon);
+    icon.setAttribute('alt', `${business.name} icon`);
     card.appendChild(icon);
     let name = document.createElement('h2');
     name.textContent = business.name;
