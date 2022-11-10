@@ -17,6 +17,14 @@ main{
     
 }
 
+#homeLink{
+    text-decoration: none;
+}
+
+#homeLink:hover{
+    font-size: 100%;
+}
+
 #site-name h2{
     color: #476039;
     font-family: 'Karla', sans-serif;
@@ -94,6 +102,7 @@ h1{
 }
 
 footer{
+    margin-top: 100px;
     text-align: center;
     font-family: 'Karla', sans-serif;
 }
@@ -383,6 +392,73 @@ input{
     text-align: left;
 }
 
+.directorySection{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    height: 45vh;
+    width: 85vw;
+    font-family: 'Montserrat', sans-serif;
+    font-size: .75em;
+}
+
+.directoryIcon{
+    height: auto;
+    margin: auto;
+}
+
+.businessSite{
+    font-size: 1.25em;
+}
+
+.directoryListSection{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
+
+.displayNone{
+    display: none;
+}
+
+#directoryBody{
+    display: flex;
+    flex-direction: column;
+}
+
+#directoryFooter{
+    grid-row: 3/4;
+}
+
+#menuOptions{
+    grid-row: 1/2;
+}
+
+.listCards section:nth-child(even) {
+	background-color: #EAF0E3;
+}
+
+h3{
+    margin-top: 0px;
+    margin-top: 0px;
+}
+
+.highlight{
+    background-color: #D1D8CB;
+}
+
+.listMenu{
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 10px;
+}
+
+.gridMenu{
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 10px;
+}
 
 
 
@@ -643,6 +719,66 @@ input{
         text-align: center;
     }
 
+    /* Directory */
+
+    body{
+        margin: 0px;
+
+    }
+
+    #directoryMain{
+        margin: auto;
+        display: grid;
+        grid-template-rows: 100px auto;
+    }
+
+    #menuOptions{
+        margin: auto;
+        grid-row: 1/2;
+    }
+
+    #cards{
+        grid-row: 2/3;
+        margin: auto;
+    }
+
+    .directoryListSection{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 2fr;
+        height: 100%;
+        text-align: left;
+        column-gap: 10px;
+        align-items: center;
+        margin-top: 0px;
+    }
+
+    .directoryListH2{
+        font-size: 1.5em;
+        text-align: left;
+    }
+
+    .directoryIcon{
+        height: auto;
+        margin: auto;
+        margin-top: 0px;
+        margin-bottom: 10px;
+    }
+
+    .gridCards{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 20px;
+    }
+
+    .directorySection{
+        width: 40vw;
+        margin: auto;
+        justify-content: center;
+    }
+
+    .displayNone{
+        display: none;
+    }
 
     
 }
@@ -873,6 +1009,31 @@ input{
         margin-left: 90px;
     }
     
+    /* Directory */
+    .gridCards{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 20px;
+    }
+
+    .directoryIcon{
+        height: auto;
+        width: auto;
+    }
+
+    .directorySection{
+        width: 28vw;
+        margin: auto;
+        
+    }
+
+    #directoryMain{
+        grid-template-columns: 1fr;
+    }
+
+    .displayNone{
+        display: none;
+    }
 
    
 }
