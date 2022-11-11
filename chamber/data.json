@@ -5,7 +5,7 @@
         "address": "833 E Main St, Lehi, UT 84043",
         "phone": "(801) 768-4401",
         "website": " lehimills.com",
-        "icon": "/images/millIcon.JPG"
+        "icon": "images/millIcon.JPG"
     },
     {
         "name": "Momentum Climbing Gym",
@@ -19,70 +19,70 @@
         "address": "394 W Main St, Lehi, UT 84043",
         "phone": "(801) 224-4335",
         "website": "gownsbypamela.com",
-        "icon": "images/gownIcon.jpg"
+        "icon": "images/gownIcon.JPG"
     },
     {
         "name": "Big Leap",
         "address": "525 S 850 E #2 Lehi, Utah 84043",
         "phone": "(801) 436-3003",
         "website": "bigleap.com",
-        "icon": "images/leapIcon.jpg"
+        "icon": "images/leapIcon.JPG"
     },
     {
         "name": "Lehi Chiropractic",
         "address": "72 W. Main Street Lehi UT 84043",
         "phone": "801-653-2900",
         "website": "http://www.lehichiropractic.com/",
-        "icon": "images/chiropracticIcon.jpg"
+        "icon": "images/chiropracticIcon.JPG"
     },
     {
         "name": "Code Ninjas",
         "address": "1402 E 3500 N Suite 101, Lehi, UT 84043",
         "phone": "801-642-2633",
         "website": "https://www.codeninjas.com/",
-        "icon": "images/codeIcon.jpg"
+        "icon": "images/codeIcon.JPG"
     },
     {
         "name": "Loan Peak Metal",
         "address": "1236 E COOPERS HOLLOW DR LEHI, UT 84043-5069 US",
         "phone": "(801) 822-1076",
         "website": "https://lonepeakmetalworks.com/",
-        "icon": "images/ironIcon.jpg"
+        "icon": "images/ironIcon.JPG"
     },
     {
         "name": "La Fountain Mexican Restaurant",
         "address": "101 North 1200 East Suite A-6, Lehi, UT 84043",
         "phone": "(801) 766-2619",
         "website": "https://lafountainmexutah.com/lehi/",
-        "icon": "images/fountainIcon.jpg"
+        "icon": "images/fountainIcon.JPG"
     },
     {
         "name": "Pioneer Party",
         "address": "154 W Main St, Lehi, UT 84043",
         "phone": "(801) 768-3549",
         "website": "https://pioneerparty.net/",
-        "icon": "images/partyIcon.jpg"
+        "icon": "images/partyIcon.JPG"
     },
     {
         "name": "Elegant Images",
         "address": "Based on customer location",
         "phone": "702.630-5829",
         "website": "elegantimages.com",
-        "icon": "images/candaceIcon.jpg"
+        "icon": "images/candaceIcon.JPG"
     },
     {
         "name": "Solo",
         "address": "3049 Executive Pkwy Unit 200, Lehi, UT 84043",
         "phone": " (888) 316-5845",
         "website": "https://gosolo.io/",
-        "icon": "images/soloIcon.jpg"
+        "icon": "images/soloIcon.JPG"
     },
     {
         "name": "Thanksgiving Point",
         "address": "3003 N Thanksgiving Way, Lehi, UT 84043",
         "phone": "801.768.2300",
         "website": "https://thanksgivingpoint.org/",
-        "icon": "images/thanksgivingpointIcon.jpg"
+        "icon": "images/thanksgivingpointIcon.JPG"
     }
     
     ]
