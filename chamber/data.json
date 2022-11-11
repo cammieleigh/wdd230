@@ -5,7 +5,7 @@
         "address": "833 E Main St, Lehi, UT 84043",
         "phone": "(801) 768-4401",
         "website": " lehimills.com",
-        "icon": "images/millIcon.jpg"
+        "icon": "/images/millIcon.jpg"
     },
     {
         "name": "Momentum Climbing Gym",
