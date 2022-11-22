@@ -216,7 +216,7 @@ main h2 {
 
 p{
     font-family: 'Montserrat', sans-serif;
-    font-size: 1.25em;
+    /* font-size: 1.25em; */
     text-align: center;
 }
 
@@ -227,18 +227,15 @@ p{
 
 .showBanner{
     display: flex;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 1em;
-    text-align: center;
     height: 50%;
-    background-color: #FFF6A1;
-    background-image: url('../images/mountains.jpg');
+    background-color: #4E674D;
     object-fit: cover;
     padding-top: 0px;
 }
 
 #bannertext {
     background: rgba(255,255,255, .65);
+    width: 100%;
 }
 
 #lowerfooter{
@@ -251,6 +248,13 @@ p{
     height: 157px;
 }
 
+#buttonParentTwo{
+    position: relative;
+    /* width: 338px;
+    height: 157px; */
+}
+
+
 #joinButton{
     position: absolute;
     right: 20px;
@@ -262,6 +266,11 @@ p{
     color: white;
     font-family: 'Karla', sans-serif; 
     font-size: 2em;
+}
+
+#joinLink{
+    font-size: 2em;
+    text-align: center;
 }
 
 #degrees{
@@ -330,6 +339,45 @@ p{
 }
 .discoverMain{
     margin: auto;
+}
+
+#census{
+    font-size: 1em;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
+
+.censusList{
+    margin-top: 10px;
+    list-style: none;
+    text-align: start;
+}
+
+a.demographicRef{
+    font-size: 1em;
+    
+}
+
+#censusUl{
+    margin-top: 50px;
+}
+
+.attractionPhotos{
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.attractionText{
+    font-size: .75em;
+}
+
+.container{
+    justify-items: center;
+}
+
+#demographics{
+    text-align: center;
 }
 
 /* Form */
@@ -402,6 +450,7 @@ input{
     font-size: .75em;
 }
 
+
 .directoryIcon{
     height: auto;
     margin: auto;
@@ -416,6 +465,7 @@ input{
     flex-direction: column;
     font-family: 'Montserrat', sans-serif;
     text-align: center;
+    margin-top: 0px;
 }
 
 .displayNone{
@@ -433,6 +483,10 @@ input{
 
 #menuOptions{
     grid-row: 1/2;
+    display: flex;
+    justify-content: center;
+    column-gap: 10px;
+    margin-bottom: 20px;
 }
 
 .listCards section:nth-child(even) {
@@ -594,7 +648,7 @@ h3{
 
     #discoverMain{
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
+        grid-template-rows: 50vh 50px auto;
         width: 90%;
     }
 
@@ -609,7 +663,7 @@ h3{
 
     #demographics{
         grid-column: 1/3;
-        grid-row: 2/3;
+        grid-row: 1/2;
         width: 95%;
     }
 
@@ -633,9 +687,24 @@ h3{
         text-align: center;
     }
 
+    #census{
+        font-size: 1.5em;
+    }
+    .censusList{
+        font-size: 1.5em;
+        margin-top: 30px;
+    }
+
+    a.demographicRef{
+        font-size: 1.5em;
+    }
+
+
+
 
     #attractionsHeading{
         grid-column: 1/3;
+        text-align: center;
     }
 
     .container:hover .photoHover {
@@ -676,7 +745,7 @@ h3{
     }
    
     .attractionText{
-        font-size: .95em;
+        font-size: .75em;
         text-align: center;
     }
 
@@ -978,14 +1047,14 @@ h3{
 
     #demographics{
         grid-column: 1/2;
-        grid-row: 3/4;
+        grid-row: 1/2;
         width: 95%;
     }
 
-    
-
+ 
     .attractionPhotos{
         height: 100%;
+        margin: auto;
     }
 
     #attractionsHeading{

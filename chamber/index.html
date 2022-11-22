@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/chamber.css">
     <script defer src="js/chamber.js"></script>
     <script defer src="js/windChill.js"></script>
+    <script defer src="js/weatherapi.js"></script>
     <link rel="shortcut icon" href="favicon.ico">
     <meta name="description" content="The home page for the chamber of commerce webpage">
     <title>Chamber Home Page</title>
@@ -44,12 +45,14 @@
         <div id="buttonParent">
         <section id="site-name"> 
             <h2>Welcome to Lehi</h2>
+            <a href="join.html">
             <button id="joinButton">Join the Chamber</button> 
+        </a>
         </section>
         </div>
         <section id="event">
             <h2>5K Fun Run!</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <p>Meet us at the Lehi Splash Pad for the start of the Turkey Gobble 5k! 1st place prize is a frozen turkey!</p>
         </section>
         <section id="weather">
             <h2>Weather</h2>
@@ -65,7 +68,7 @@
         </section>
         <section id="news">
             <h2>News Release</h2>
-            <p id="newsText">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <p id="newsText">The Lehi Legacy Center will be closed for the week of Thanksgiving. During that time there will be renovations on the gym and the track.</p>
         </section>
         <div id="spotlightsection">
         <section id="spotlight">
@@ -104,9 +107,16 @@
             </div>
         </section>
         </div>
+        
         <section id="join">
+            <div id="buttonParent"></div>
             <h2>Join</h2>
+            <a id="joinLink" href="join.html">
+                Join our Chamber!
+            </a>
+        </div>
         </section>
+    
     </main>
     <footer>
         <div id="upperfooter">
