@@ -280,9 +280,14 @@ p{
     
 }
 
-#weatherPhoto{
-    flex-basis: content;
-    grid-column: 1/2;
+#weathericon{
+    width: 9em;
+}
+
+figcaption{
+    font-family: 'Karla', sans-serif; 
+    font-size: 1.5em;
+    text-align: center;
 }
 
 #weatherInfo{

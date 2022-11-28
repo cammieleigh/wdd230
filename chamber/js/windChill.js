@@ -1,4 +1,4 @@
-let temp = document.querySelector('#t').textContent;
+let temp = document.querySelector('#current-temp').textContent;
 let speed = document.querySelector('#w').textContent;
 let chill;
 
