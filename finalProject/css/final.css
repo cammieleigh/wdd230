@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One&family=Quicksand:wght@300&family=Roboto:wght@300&display=swap');
+
+body{
+    margin: 0;
+    background-color: #FFE3F7;
+}
+
+header{
+    height: 25vh;
+}
+
+#nameHeader{
+    font-family: 'Poiret One', cursive;
+    text-align: center;
+    font-size: 14.95vw;
+    margin: 0px;
+    color: #293241;
+    position: relative;
+    background-color: rgba(255,255,255, 0);
+    position: relative;
+}
+
+#divBlock{
+    position: absolute;
+    height: 20vh;
+}
+
+main{
+    margin-top: 4vh;
+}
+
+#mainImage{
+    width: 75%;
+    display: block;
+    margin: auto;
+}
+
+.btn{
+    background-color: rgba(255,255,255, 0);
+    border-style: none;
+    font-family: 'Poiret One', cursive; 
+    color: #293241;
+    font-size: calc(25px + (40 - 25) * ((100vw - 375px) / (700 - 375)));
+    margin-left: 20px;
+    position: absolute;
+}
+
+span{
+    display: inline-block;
+}
+
+#m{
+    transform: translate(0px, -5px) rotate(5deg);
+    
+}
+
+#e{
+    transform: translate(-5px, 2px) rotate(17deg);
+}
+
+#n{
+    transform: translate(-10px, 10px) rotate(27deg);
+}
+
+#u{
+    transform: translate(-20px, 25px) rotate(33deg);
+}
+
+
+
+.showMenu{
+    display: flex;
+    flex-direction: column;
+}
+
+nav {
+    display: flex;
+    flex-direction:column;
+    display: none; 
+    align-content: space-evenly;
+    text-align: center;
+    margin: auto;
+    width: 100vh;
+    height: 100vh;
+    background-color: rgba(41, 50, 65, .65)
+}
+
+#backgroundPink{
+    background-color: #F5FF87;
+    width: 60vw;
+    /* border-radius: 0px 100px 0px 0px; */
+    height: 100vh;
+    margin-top: 0px;
+    position: relative;
+}
+#backgroundYellow{
+    background-color: #FFC038;
+    width: 50vw;
+    /* border-radius: 0px 100px 0px 0px; */
+    height: 100vh;
+    /* top: 20px; */
+    position: absolute;
+}
+
+/* 983612
+F1D620
+FF9100
+79BEEE */
+
+#backgroundRed{
+    background-color: #FFA088;
+    width: 40vw;
+    /* border-radius: 0px 100px 0px 0px; */
+    height: 100vh;
+    /* top: 20px; */
+    position: absolute;
+}
+
+#backgroundCream{
+    background-color: #FFE3F7;
+    width: 30vw;
+    /* border-radius: 0px 100px 0px 0px; */
+    height: 100vh;
+    /* top: 20px; */
+    position: absolute;
+}
+
+#headerPink{
+    background-color: #F5FF87;
+    width: 60vw;
+    border-radius: 0px 100px 0px 0px;
+    height: 35vh;
+    margin-top: 20px;
+    position: relative;
+}
+#headerYellow{
+    background-color: #FFC038;
+    width: 50vw;
+    border-radius: 0px 100px 0px 0px;
+    height: 30vh;
+    top: 20px;
+    position: absolute;
+}
+
+#headerRed{
+    background-color: #FFA088;
+    width: 40vw;
+    border-radius: 0px 100px 0px 0px;
+    height: 30vh;
+    top: 20px;
+    position: absolute;
+}
+
+#headerCream{
+    background-color: #FFE3F7;
+    width: 30vw;
+    border-radius: 0px 100px 0px 0px;
+    height: 30vh;
+    top: 20px;
+    position: absolute;
+}
+
+
+/*Medium screen view */
+@media only screen and (min-width: 700px)
+{
+
+}
+
+/*Large screen view */
+@media only screen and (min-width: 1000px)
+{
+    #backgroundRed{
+        position: relative;
+        bottom: 20px;
+        background-color: #EC4E20;
+        width: 85vw;
+        border-radius: 25px;
+        margin: auto;
+    }
+
+    #backgroundPink{
+        background-color: #FEC0AA;
+        width: 100vw;
+        border-radius: 0px 0px 25px 25px;
+        margin: auto;
+    }
+
+    header{
+        background-color: #FEC0AA;
+        margin: auto;
+        height: 100px;
+    }
+
+    #nameHeader{
+        margin: 0px;
+    }
+
+    #mainImage{
+        position: relative;
+        bottom: 15px;
+        border-radius: 25px;
+    }
+
+
+}
