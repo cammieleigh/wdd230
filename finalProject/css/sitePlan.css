@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One&family=Quicksand:wght@300&family=Roboto:wght@300&display=swap');
+header{
+    margin: auto;
+    background: rgba(36,71,29, .65);
+    width: 85%;
+    margin-top: 10px;
+    border-radius: 25px;
+}
+h1{
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    margin: 0px;
+    padding: 25px;
+}
+h2{
+    font-family: 'Roboto', sans-serif;
+    text-decoration: underline;
+}
+
+h3{
+    font-family: 'Roboto', sans-serif;
+}
+
+p{
+    font-family: 'Roboto', sans-serif;
+}
+
+main{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+body{
+    margin: 0;
+    background-color: white;
+}
+
+#fontOne{
+    font-family: 'Poiret One', cursive;
+    font-size: 1.5em;
+}
+
+#fontTwo{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1.5em;
+}
+
+table, th, td{
+    border: 1px solid;
+    border-collapse: collapse;
+  }
+
+  th, td{
+    padding: 10px;
+  }
+
+table{
+    width: 100%;
+}
+
+#cellOne{
+    background-color: #FFE3F7;
+}
+
+#cellTwo{
+    background-color: #F5FF87;
+}
+
+#cellThree{
+    background-color: #FFC038;
+}
+
+#cellFour{
+    background-color: #FFA088;
+}
+
+#cellFive{
+    background-color: #293241;
+}
+
+img{
+    display: block;
+    width: 50%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+td{
+    font-family: 'Roboto', sans-serif;
+}
+
+
+/*Medium screen view */
+@media only screen and (min-width: 700px){
+    main{
+        width: 75vw;
+        margin: auto;
+    }
+}
+
+/*Large screen view */
+@media only screen and (min-width: 1000px){
+    img{
+        width: 20%;
+    }
+}
