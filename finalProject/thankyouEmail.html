@@ -8,17 +8,15 @@
   name="description"
   content="The Nifty Nail Salon gives information about the salon, such as prices, hours, and booking options. Customers can also book appointments, and sign up for newsletters" />
     <link rel="stylesheet" href="css/final.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <script defer src="js/final.js"></script>
-    <script defer src="js/storage.js"></script>
-    <title>Final Project</title>
+    <title>Final Project Services</title>
 </head>
 <body>
     <header>
-    <h1 id="nameHeader">Nifty <img id='logo' src='images/logo.png' alt='logo'>Nails</h1>
-    
+        <h1 id="nameHeader">Nifty <img id='logo' src='images/logo.png' alt='logo'>Nails</h1>
     </header>
-    <main>
-        <button class="btn"><span id="vertical">menu</span></button>
+    <main id="thankyouMain">
         <nav id="headerMenu">
             <a href="finalIndex.html">Home</a>
             <a href="services.html">Services</a>
@@ -28,8 +26,7 @@
             <a class='socialLink' href="https://www.instagram.com/"><img class="socialMedia" src='images/instagram.png' alt="Instagram Logo"></a>
             <a class='socialLink' href="https://www.facebook.com/"><img class="socialMedia" src="images/facebook.png" alt="Facebook Logo"></a>
             </nav>
-                    
-   
+        <button class="btn"><span id="vertical">menu</span></button>
         <div id="relativeDiv">
             <nav id="menu">
                 <a href="finalIndex.html">Home</a>
@@ -41,21 +38,10 @@
                 <a href="https://www.facebook.com/"><img class="socialMedia" src="images/facebook.png" alt="Facebook Logo"></a>
                 </nav>
             </div>
-            <img id="mainImageBig" src="images/nailPolish.jpg" alt="Bottle of nail polish">
-        <img id="mainImage" src="images/nailPolish.jpg" alt="Bottle of nail polish">
-        <section id="mainLinks">
-            <div id="linkDiv">
-                <div id="linkImages">
-                    <a class="servicesImage" href="services.html"><img class="servicesImage" src='images/manicureTwo.jpg' alt='Hand with painted nails'> Services</a>
-                    <a class="packagesImage" href="packages.html"><img class="packagesImage" src='images/manicure.jpg' alt='Hand with painted nails'> Contact</a>
-                </div>
-            <a id="services" href="services.html">Services</a>
-            <a id="contact" href="contact.html">Contact</a>
-            <a id="booking" href="booking.html">Book an <br>Appointment!</a>
-        
+            <div id="thankyouInfo">
+            <h1 id="thankyou">Thank you for subscribing to our email!</h1>
+            <p id="thankyouParagraph">We will be sending out emails about deals and fun new products that we get in the salon!</p>
         </div>
-        </section>
-        <p id="visitParagraph">It's been <span class="visits"></span> days since you last visited the page!</p>
     </main>
     <footer>
         <div id="footerNav">
@@ -68,8 +54,6 @@
             <a class='socialFooter' href="https://www.facebook.com/"><img class="socialMedia" src="images/facebook.png" alt="Facebook Logo"></a>
             </div>
         <p id="footerText">&copy; <span class="year"></span>Cammie Peterson - WDD 230 project</p>
-        
     </footer>
 </body>
 </html>
-

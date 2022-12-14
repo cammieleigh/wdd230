@@ -8,17 +8,15 @@
   name="description"
   content="The Nifty Nail Salon gives information about the salon, such as prices, hours, and booking options. Customers can also book appointments, and sign up for newsletters" />
     <link rel="stylesheet" href="css/final.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <script defer src="js/final.js"></script>
-    <script defer src="js/storage.js"></script>
-    <title>Final Project</title>
+    <title>Final Project Services</title>
 </head>
 <body>
     <header>
-    <h1 id="nameHeader">Nifty <img id='logo' src='images/logo.png' alt='logo'>Nails</h1>
-    
+        <h1 id="nameHeader">Nifty <img id='logo' src='images/logo.png' alt='logo'>Nails</h1>
     </header>
     <main>
-        <button class="btn"><span id="vertical">menu</span></button>
         <nav id="headerMenu">
             <a href="finalIndex.html">Home</a>
             <a href="services.html">Services</a>
@@ -28,8 +26,7 @@
             <a class='socialLink' href="https://www.instagram.com/"><img class="socialMedia" src='images/instagram.png' alt="Instagram Logo"></a>
             <a class='socialLink' href="https://www.facebook.com/"><img class="socialMedia" src="images/facebook.png" alt="Facebook Logo"></a>
             </nav>
-                    
-   
+        <button class="btn"><span id="vertical">menu</span></button>
         <div id="relativeDiv">
             <nav id="menu">
                 <a href="finalIndex.html">Home</a>
@@ -41,21 +38,44 @@
                 <a href="https://www.facebook.com/"><img class="socialMedia" src="images/facebook.png" alt="Facebook Logo"></a>
                 </nav>
             </div>
-            <img id="mainImageBig" src="images/nailPolish.jpg" alt="Bottle of nail polish">
-        <img id="mainImage" src="images/nailPolish.jpg" alt="Bottle of nail polish">
-        <section id="mainLinks">
-            <div id="linkDiv">
-                <div id="linkImages">
-                    <a class="servicesImage" href="services.html"><img class="servicesImage" src='images/manicureTwo.jpg' alt='Hand with painted nails'> Services</a>
-                    <a class="packagesImage" href="packages.html"><img class="packagesImage" src='images/manicure.jpg' alt='Hand with painted nails'> Contact</a>
-                </div>
-            <a id="services" href="services.html">Services</a>
-            <a id="contact" href="contact.html">Contact</a>
-            <a id="booking" href="booking.html">Book an <br>Appointment!</a>
-        
+            <div id="appointmentContent">
+            <h2 id="appointmentHeader">Appointment Booking</h2>
+            
+            <p id="appointmentParagraph">Please fill out the form below, and we will contact you with times that we have available that work best for you!</p>
+            <div id="formMain">
+            <form method="get" action="thankyou.html">
+                <label for="fname">First Name*:</label>
+                <input id="fname" type="text" name="firstname" required>
+                <label for="lname">Last Name*:</label>
+                <input id="lname" type="text" name="lastname" required>
+                <label for="email">Email*:</label>
+                <input id="email" type="email" placeholder="example@example.com" name="email" required>
+                <label for="phoneNumber">Phone Number*:</label>
+                <input id="phoneNumber" type='tel' required>
+                <h3>What days of the week work best for you? (click all that apply):</h3>
+                <label for="day1">Monday
+                <input id="day1" type="checkbox"></label>
+                <label for="day2">Tuesday
+                <input id="day2" type="checkbox"></label>
+                <label for="day3">Wednesday
+                <input id="day3" type="checkbox"></label>
+                <label for="day4">Thursday
+                <input id="day4" type="checkbox"></label>
+                <label for="day5">Friday
+                <input id="day5" type="checkbox"></label>
+                <label for="day6">Saturday
+                <input id="day6" type="checkbox"></label>
+                <h3>What time of day works best for you? (click all that apply):</h3>
+                <label for="time1">Morning: 10am - 12pm
+                <input id="time1" type="checkbox"></label>
+                <label for="time2">Afternoon: 1p-3pm
+                <input id="time2" type="checkbox"></label>
+                <label for="time3">Evening: 4p-6pm
+                <input id="time3" type="checkbox"></label> 
+                <input id='submit' type="submit" value="Submit">
+            </form>
         </div>
-        </section>
-        <p id="visitParagraph">It's been <span class="visits"></span> days since you last visited the page!</p>
+    </div>
     </main>
     <footer>
         <div id="footerNav">
@@ -68,8 +88,6 @@
             <a class='socialFooter' href="https://www.facebook.com/"><img class="socialMedia" src="images/facebook.png" alt="Facebook Logo"></a>
             </div>
         <p id="footerText">&copy; <span class="year"></span>Cammie Peterson - WDD 230 project</p>
-        
     </footer>
 </body>
 </html>
-

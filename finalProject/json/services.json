@@ -1,0 +1,42 @@
+{
+    "services":[
+        {
+            "name": "Gel Polish Add-on",
+            "description": "Add this to your manicure or pedicure to use our long-lasting gel polish",
+            "price": "$7",
+            "length": ""
+        },
+        {
+            "name": "Gel Polish Application",
+            "description": "This is for the application of gel polish only. If you would like gel polish used in your manicure, please see our gel polish add-on",
+            "price": "$25",
+            "length": "30 min"
+        },
+        {
+            "name": "Acrylic Nails Full Set",
+            "description": "Add length to your natural nail with our long-lasting acrylic. We will work with you to find the shape that you want, and clean up around the nail too.",
+            "price": "$60",
+            "length": "90 min"
+        },
+        {
+            "name": "Acrylic Nail Fill",
+            "description": "As your nails keep growing, you'll need to get a fill to keep your acrylic nails looking good. We will reshape and perform cuticle care to keep you looking good.",
+            "price": "$40",
+            "length": "90 min"
+        },
+        {
+            "name": "Manicure",
+            "description": "Manicures start with filing and shaping your nails. After shaping, we use a warm towel to soften the nails and cuticles, to clean around the nail bed. We then gently exfoliate the hands to leave your hands feeling soft and smooth, after which we top your nails off with quality nail polish.",
+            "price": "$35",
+            "length":"45 min"
+        },
+        {
+            "name": "Pedicure",
+            "description": "Pedicures start with a soak in a warm foot bath. We then shape the nails, clean up around the nail, and add cuticle oil. After, we gently exfoliate the feet and legs and apply lotion for soft skin. Then we will top it all off with our quality nail polish",
+            "price": "$40",
+            "length": "60 min"
+        }
+    ]
+
+    
+}

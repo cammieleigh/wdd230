@@ -74,10 +74,4 @@ fetch(requestURL)
     document.querySelector('div.gridCards').appendChild(card);
   };
 
-
-
-//  function displayBusinessesList(){
-//   businesses.forEach(displayList);
-//   }
-
  

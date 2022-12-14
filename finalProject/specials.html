@@ -8,17 +8,15 @@
   name="description"
   content="The Nifty Nail Salon gives information about the salon, such as prices, hours, and booking options. Customers can also book appointments, and sign up for newsletters" />
     <link rel="stylesheet" href="css/final.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <script defer src="js/final.js"></script>
-    <script defer src="js/storage.js"></script>
-    <title>Final Project</title>
+    <title>Final Project Services</title>
 </head>
 <body>
     <header>
-    <h1 id="nameHeader">Nifty <img id='logo' src='images/logo.png' alt='logo'>Nails</h1>
-    
+        <h1 id="nameHeader">Nifty <img id='logo' src='images/logo.png' alt='logo'>Nails</h1>
     </header>
     <main>
-        <button class="btn"><span id="vertical">menu</span></button>
         <nav id="headerMenu">
             <a href="finalIndex.html">Home</a>
             <a href="services.html">Services</a>
@@ -28,8 +26,7 @@
             <a class='socialLink' href="https://www.instagram.com/"><img class="socialMedia" src='images/instagram.png' alt="Instagram Logo"></a>
             <a class='socialLink' href="https://www.facebook.com/"><img class="socialMedia" src="images/facebook.png" alt="Facebook Logo"></a>
             </nav>
-                    
-   
+        <button class="btn"><span id="vertical">menu</span></button>
         <div id="relativeDiv">
             <nav id="menu">
                 <a href="finalIndex.html">Home</a>
@@ -37,25 +34,22 @@
                 <a href="specials.html">Specials</a>
                 <a href="appointment.html">Appointments</a>
                 <a href="contact.html">Contact</a>
+                <div id="socialGrid">
                 <a href="https://www.instagram.com/"><img class="socialMedia" src='images/instagram.png' alt="Instagram Logo"></a>
                 <a href="https://www.facebook.com/"><img class="socialMedia" src="images/facebook.png" alt="Facebook Logo"></a>
+            </div>
                 </nav>
             </div>
-            <img id="mainImageBig" src="images/nailPolish.jpg" alt="Bottle of nail polish">
-        <img id="mainImage" src="images/nailPolish.jpg" alt="Bottle of nail polish">
-        <section id="mainLinks">
-            <div id="linkDiv">
-                <div id="linkImages">
-                    <a class="servicesImage" href="services.html"><img class="servicesImage" src='images/manicureTwo.jpg' alt='Hand with painted nails'> Services</a>
-                    <a class="packagesImage" href="packages.html"><img class="packagesImage" src='images/manicure.jpg' alt='Hand with painted nails'> Contact</a>
-                </div>
-            <a id="services" href="services.html">Services</a>
-            <a id="contact" href="contact.html">Contact</a>
-            <a id="booking" href="booking.html">Book an <br>Appointment!</a>
-        
-        </div>
-        </section>
-        <p id="visitParagraph">It's been <span class="visits"></span> days since you last visited the page!</p>
+            <div id="specialsMain">
+                <h2 id="specialH2">Specials</h2>
+                <p id="specialP">Below are our current specials that we have going on in the salon! Sign up to be on our email list, and you will be the first to know when a new special coming, or when an old favorite is expiring!</p>
+                <a id="specialA" href="thankyouEmail.html">Be in the know</a>
+                <section id="specialSection">
+                    <img id='nailSpecialImg' src="images/christmasNails.jpg" alt="Christmas manicure">
+                    <h3 id="specialH3">Christmas Special!</h3>
+                    <h4 id="specialH4">Come in for a special holiday deal! When you're with the receptionist at the desk, use the special code "home for the holidays" for 15% off your service!</h4>
+                </section>
+    </div>
     </main>
     <footer>
         <div id="footerNav">
@@ -68,8 +62,6 @@
             <a class='socialFooter' href="https://www.facebook.com/"><img class="socialMedia" src="images/facebook.png" alt="Facebook Logo"></a>
             </div>
         <p id="footerText">&copy; <span class="year"></span>Cammie Peterson - WDD 230 project</p>
-        
     </footer>
 </body>
 </html>
-
