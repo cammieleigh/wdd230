@@ -10,7 +10,7 @@ main{
 }
 
 #site-name{
-    background-image: url('../images/mountain600word.jpg');
+    background-image: url('../images/mountain600.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     position: relative;
@@ -626,7 +626,7 @@ h3{
         position: relative;
         margin: auto;
         margin-top: 30px;
-        background-image: url('../images/mountain800word.jpg');
+        background-image: url('../images/mountain800.jpg');
         background-size: cover;
         background-repeat: no-repeat;
     }
@@ -916,7 +916,7 @@ h3{
         width: 90%;
         height: 95%;
         position: relative;
-        background-image: url('../images/mountain1000word.jpg');
+        background-image: url('../images/mountain1000.jpg');
         background-size: cover;
         background-repeat: no-repeat;
     }
